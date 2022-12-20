@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#00ABE0;
+    --color-dark:#252525;
+    --color-gray:#808080;
+    --color-light-gray:#F6F6F6;
+    --color-white:#FFFFFF;
+    --sidebar-shadow: 0rem .3rem .6rem;
+    --box-shadow: .3rem .3frem .6rem;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+/* ----------------------------------------------------
+Sidebar 
+---------------------------------------------------- */
+.sidebar, .sidebar .profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar{
+    height: 100vh;
+    width: 26rem;
+    box-shadow: var(--sidebar-shadow);
+}
+
+
+.sidebar #rgi-logo
+{
+    width:12.4rem;
+    height: 8.2rem;
+    margin-top: 1.5rem;
+}
+
+/* profile section  */
+
+.sidebar .profile{
+    width: 26rem;
+    height: auto;
+    margin-top: 5rem;
+}
+
+
+/* avatar */
+.profile #avatar{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+.profile #greeting{
+    margin: .3rem;
+    color: var(--color-gray);
+    font-size: 1.4rem;
+}
+
+.profile #name{
+    color: var(--color-dark);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* tabs section  */
+
+.tabs,.action{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding:5rem 0 0 3rem;
+}
+
+
+.tabs .tab,.action .tab{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--color-gray);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.tab p{
+    margin-left: 1.7rem;
+}
+
+.tabs .active{
+    color: var(--color-dark);
+}
+
+/* Action section  */
+
+.action{
+    position: absolute;
+    bottom: 2rem;
+}
+.action .tab{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+
+/* -------------------------------------------
+Content panel 
+------------------------------------------- */
+
+.content{
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 4rem;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/* dashboard heading  */
+.content h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+/* tiles panel  */
+.content .tiles{
+    margin-top: 5.8rem;
+    display: flex;
+}
+
+.tiles .tile-small ,.tiles .tile-medium,.tile-large{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 25rem;
+    box-shadow: var(--color-gray) .1rem .1rem .6rem;
+    margin-right: 7rem;
+    border-radius: 2rem;
+    padding: 2.5rem;
+}
+
+.tiles .tile-medium{
+    width:65rem;
+    margin-right: 4rem;
+}
+
+
+.tile-small .heading , .tile-medium .heading ,.tile-large .heading{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.tile-small .data{
+    margin-top: 2rem;
+}
+
+.tile-small .data label{
+    font-size: 1.2rem;
+    color: var(--color-gray);
+}
+
+.tile-small .data p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+}
+
+.tile-small  h2{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    color: var(--color-primary);
+
+}
+
+/* medium sized tiles  */
+
+.tile-medium{
+    align-items: center;
+}
+
+.tile-medium button{
+    position: absolute;
+    bottom: 2rem;
+    width: 15rem;
+    height: 3rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.tile-medium .row{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    width: 60rem;
+    height: 6rem;
+}
+
+.row:nth-child(even){
+    background-color: var(--color-light-gray);
+}
+
+.row .col:nth-child(1){
+    width: 70%;
+    display: block;
+    float: left;
+}
+
+.row .col:nth-child(2){
+    width: 30%;
+    display: block;
+    float: right;
+}
+
+.row .col{
+    font-size: 1.2rem;
+    color: var(--color-gray);
+}
+
+.col b{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+}
+
+.tile-medium p{
+    font-size: 1.5rem;
+    color: var(--color-gray);
+}
+
+/* large tile  */
+
+.tiles .tile-large{
+    width:134rem;
+    height: auto;
+}
+
+.tile-large table{
+    margin: 1rem;
+    border-collapse: collapse;
+}
+
+.tile-large tr{
+    height:6rem;
+    font-size: 1.4rem;
+}
+
+.tile-large tr:nth-child(1){
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    
+}
+table th{
+    font-weight: 500;
+}
+
+td{
+    text-align: center;
+}
+
+table tr:nth-child(odd){
+    background-color: var(--color-light-gray);
+}
+
+.table-button{
+    width: 10rem;
+    height:3rem ;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="sidebar">
+            <img src="Media/RGI.png" alt="Raisoni Logo" id="rgi-logo">
+            <!-- profile section  -->
+            <div class="profile">
+                <img src="Media/avatar.png" alt="avatar" id="avatar">
+                <p id="greeting"> Welcome back,</p>
+                <p id="name">SAURABH TALELE</p>
+            </div>
+            <!-- tabs section  -->
+            <div class="tabs">
+                <div class="tab active">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                        </span>
+                        <p>Dashboard</p>
+                </div>
+                <div class="tab">
+                    <span class="material-symbols-outlined">
+                        school
+                        </span>
+                        <p>Academics</p>
+                </div>
+                <div class="tab">
+                    <span class="material-symbols-outlined">
+                        description
+                        </span>
+                        <p>Examination</p>
+                </div>
+                <div class="tab">
+                    <span class="material-symbols-outlined">
+                        library_books
+                        </span>
+                        <p>Courses</p>
+                </div>
+            </div>
+            <!-- action center  -->
+            <div class="action">
+                <div class="tab active">
+                    <span class="material-symbols-outlined">
+                        lock
+                        </span>
+                        <p>Change Password</p>
+                </div>
+
+                <div class="tab active">
+                    <span class="material-symbols-outlined">
+                        logout
+                        </span>
+                        <p>Logout</p>
+                </div>
+            </div>
+    </div>
+    <div class="content">
+        <h1 id="heading">Dashboard</h1>
+
+        <div class="tiles">
+            <div class="tile-small">
+                    <h3 class="heading">Personal Info</h3>
+                    <div class="data">
+                        <label>Name</label>
+                        <p>SAURABH TALELE</p>
+
+                        <label>Registration no.</label>
+                        <p>2021BITL067</p>
+
+                        <label>Roll no.</label>
+                        <p>69</p>
+                    </div>
+            </div>
+            <div class="tile-small">
+                <h3 class="heading">CGPA</h3>
+                <h2>9.16</h2>
+
+            </div>
+            <div class="tile-small">
+                <h3 class="heading">Attendance</h3>
+                <h2>68.7%</h2>
+
+
+            </div>
+        </div>
+
+        <div class="tiles">
+            <div class="tile-medium">
+        <h1 class="heading">Upcoming classes</h1>
+
+        <div class="row">
+            <div class="col"><b>Course Code:</b> 20PCIT3017 <br> <b>Classroom: </b> E307</div>
+            <div class="col">9-12-2022 <br> 9:15-10:15</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col"><b>Course Code:</b> 20PCIT3017 <br> <b>Classroom: </b> E307</div>
+            <div class="col">9-12-2022 <br> 9:15-10:15</div>
+        </div>
+        
+        <button>View All</button>
+
+
+            </div>
+            <div class="tile-medium">
+        <h1 class="heading">Upcoming Examination</h1>
+        <p>Couldn't find anything</p>
+        <button>Search</button>
+
+            </div>
+        </div>
+
+        <div class="tiles">
+            <div class="tile-large">
+        <h1 class="heading">Registered Courses</h1>
+        <table>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Faculty</th>
+                <th>Attendance</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>20PCIT317</td>
+                <td>Java Programming</td>
+                <td>Savitri Patil</td>
+                <td>76.9%</td>
+                <td><button class="table-button">View</button></td>
+            </tr>
+            <tr>
+                <td>20PCIT317</td>
+                <td>Java Programming</td>
+                <td>Savitri Patil</td>
+                <td>76.9%</td>
+                <td><button class="table-button">View</button></td>
+            </tr>
+            <tr>
+                <td>20PCIT317</td>
+                <td>Java Programming</td>
+                <td>Savitri Patil</td>
+                <td>76.9%</td>
+                <td><button class="table-button">View</button></td>
+            </tr>
+            <tr>
+                <td>20PCIT317</td>
+                <td>Java Programming</td>
+                <td>Savitri Patil</td>
+                <td>76.9%</td>
+                <td><button class="table-button">View</button></td>
+            </tr>
+        </table>
+
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
